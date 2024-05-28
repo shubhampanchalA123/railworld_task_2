@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+
+/* Global reset and base styles */
+/* Global reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.blogs_container {
+  padding: 30px;
+  background: #FFA50080;
+  max-width: 100%;
+}
+
+.blogs_container img {
+  float: left;
+  margin: 0px 30px 10px 0px;
+  max-width: 100%; /* Ensures the image scales down with the container */
+  height: auto;    /* Maintains the aspect ratio of the image */
+}
+
+.blogs_container_text {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  font-weight: 600;
+  overflow: hidden; /* Ensures the container respects the floated element */
+}
+
+.benifits_container {
+  padding: 100px;
+  background: #030200;
+  max-width: 100%;
+}
+
+.benifits_container .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start */
+  height: auto; /* Allow content-based height */
+  flex-direction: row; /* Default to row direction */
+}
+
+.benifits_container .left {
+  background-color: #fff;
+  padding: 20px;
+  height: 460px;
+}
+
+.benifits_container .right {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.benifits_container .container ul{
+  list-style: none;
+}
+
+
+.benifits_container .right img {
+  height: 100%; /* Ensure the image height matches the container height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+
+.blogs_container_secound img{
+  float: right;
+}
+
+
+/* Media queries for smaller screens */
+@media (max-width: 1200px) {
+  .blogs_container_text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 990px) {
+  .benifits_container .container {
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  }
+
+  .benifits_container .left,
+  .benifits_container .right {
+    width: 100%; /* Full width for both elements */
+    text-align: center; /* Center align text */
+    height: auto;
+  }
+
+  .benifits_container .right img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .blogs_container_text {
+    font-size:25px;
+  }
+
+  .benifits_container{
+    padding: 40px;
+  }
+
+
+
+
+}
+
+@media (max-width: 576px) {
+  .blogs_container_text {
+    font-size: 18px;
+  }
+}
+

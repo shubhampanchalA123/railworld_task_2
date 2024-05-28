@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden; /* Ensure no horizontal overflow */
+}
+
+.subscription-container {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 82px; /* Distance from the top */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px;
+  z-index: 1;
+  background-color: rgba(212, 148, 9, 0.5); /* Semi-transparent background color */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.subscription-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #7b7373;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  z-index: 10;
+}
+
+.subscription-form {
+  padding: 10px;
+}
+
+.subscription-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form_group_div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription-form input[type="text"],
+.subscription-form input[type="email"] {
+  width: calc(100% - 2px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.subscription-form .form-group {
+  margin-bottom: 15px;
+}
+
+.subscription-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.subscription-form .form-group div label {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.subscription-form .small-text {
+  font-size: 0.8em;
+  color: #333;
+}
+
+.subscription-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #7b7373;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.subscription-form button:hover {
+  background-color: #665d5d;
+}
+
+/* Ball Animations */
+.ball {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+}
+
+.ball-1 {
+  background-color: red;
+  animation: moveBall1 10s linear infinite;
+}
+
+.ball-2 {
+  background-color: blue;
+  animation: moveBall2 10s linear infinite;
+}
+
+.ball-3 {
+  background-color: green;
+  animation: moveBall3 10s linear infinite;
+}
+
+@keyframes moveBall1 {
+  0% { top: 0; left: 0; }
+  25% { top: 0; left: 100%; transform: translateX(-100%); }
+  50% { top: 100%; left: 100%; transform: translate(-100%, -100%); }
+  75% { top: 100%; left: 0; transform: translateY(-100%); }
+  100% { top: 0; left: 0; }
+}
+
+@keyframes moveBall2 {
+  0% { top: 0; left: 100%; transform: translateX(-100%); }
+  25% { top: 100%; left: 100%; transform: translate(-100%, -100%); }
+  50% { top: 100%; left: 0; transform: translateY(-100%); }
+  75% { top: 0; left: 0; }
+  100% { top: 0; left: 100%; transform: translateX(-100%); }
+}
+
+@keyframes moveBall3 {
+  0% { top: 100%; left: 100%; transform: translate(-100%, -100%); }
+  25% { top: 100%; left: 0; transform: translateY(-100%); }
+  50% { top: 0; left: 0; }
+  75% { top: 0; left: 100%; transform: translateX(-100%); }
+  100% { top: 100%; left: 100%; transform: translate(-100%, -100%); }
+}

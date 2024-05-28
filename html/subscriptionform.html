@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../Css/Utility.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../Css/navfoot.css">
+  <link rel="stylesheet" href="../Css/subscriptionform.css">
+</head>
+<body>
+    <div class="subscription-header">
+        <h1>SUBSCRIPTION PLAN</h1>
+    </div>
+    <div class="subscription-container">
+        <form class="subscription-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" value="Enter name..">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="abcd@gmail.com">
+
+            <label for="mobile-number">Mobile Number:</label>
+            <input type="text" id="mobile-number" name="mobile-number" value="XXXXX XXXXX">
+
+            <div class="form-group">
+                <label>Duration:</label>
+                <div class="form_group_div">
+                    <label><input type="radio" name="duration" value="monthly"> Monthly</label>
+                    <label><input type="radio" name="duration" value="yearly"> Yearly</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Mode of Payment:</label>
+                <div class="form_group_div">
+                    <label><input type="radio" name="payment-mode" value="cash"> Cash</label>
+                    <label><input type="radio" name="payment-mode" value="online"> Online</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Personal Training: <span class="small-text">*free with yearly plan</span></label>
+                <div class="form_group_div">
+                    <label><input type="radio" name="personal-training" value="required"> Required</label>
+                    <label><input type="radio" name="personal-training" value="not-required"> Not Required</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label><input type="checkbox" name="terms"> I accept all terms and conditions provided in this form.</label>
+            </div>
+
+            <button type="submit">BUY PLAN</button>
+        </form>
+        <a href="../index.html">Back to home</a>
+    </div>
+
+    <!-- Balls for Animation -->
+    <div class="ball ball-1"></div>
+    <div class="ball ball-2"></div>
+    <div class="ball ball-3"></div>
+    </form>
+</div>
+</body>
+</html>
