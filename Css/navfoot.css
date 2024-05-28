@@ -195,19 +195,35 @@
 
 .footer .content a {
   text-decoration: none;
-  color: #fefefe;
+  color: #f5c31d;
+  transition:all 0.5s;
 }
 
 .footer .content a:hover {
-  border-bottom: 1px solid #971717;
+  border-bottom: 3px solid #f8c007;
 }
 
 .footer .content h4 {
   font-size: 19px;
 }
 
-.mobi22 button {
-  background-color: #8D8383;
+.mobi22 .tag-orange {
+  background-color: #ebb810;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px; 
+  height: 50px;
+}
+
+.mobi22 .tag-gray{
+  background-color:gray;
   color: white;
   border: none;
   padding: 10px 20px;
