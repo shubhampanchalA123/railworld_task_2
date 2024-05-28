@@ -339,3 +339,16 @@
   display: none;
  }
 }
+
+
+.tag-gray:hover{
+  background-color:black ;
+}
+
+.tag-orange:hover{
+background-color:red ;
+}
+
+.social-icons img:hover{
+  filter: invert(0) brightness(2);
+}
