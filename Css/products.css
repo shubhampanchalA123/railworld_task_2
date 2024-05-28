@@ -10,21 +10,18 @@
 .nutrition_classes{
   background: url(../image/nutition.png) no-repeat center center;
   text-align: center;
-  padding: 50px;
+  padding:350px;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-
-.nutrition_classes{
-  background: url(../image/nutition.png) no-repeat center center;
-  text-align: center;
-  padding: 50px;
-  background-color: rgba(0, 0, 0, 0.7);
+.machine_container{
+  padding: 30px;
 }
+
 
 .marchandise_container{
   background: url(../image/merchandise.png) no-repeat center center;
   text-align: center;
-  padding: 50px;
+  padding: 30px;
   background-color: rgba(0, 0, 0, 0.7);
 }
